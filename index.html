@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hamza</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="/" class="link"
+          >Hamza.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" id="btn-theme2" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Hamza.</span></h1>
+        <h2 class="about__role">Software Developer.</h2>
+        <p class="about__desc">
+          I am an experienced Mobile app and Web Developer with over 3 years of hands-on experience in creating high-performing, user-friendly applications. I am skilled in all aspects of Flutter and Laravel development, from building responsive and intuitive UIs to high-performing APIs and optimizing performance. I am also proficient in testing and deployment processes, ensuring that applications run smoothly and efficiently across multiple platforms.
+        </p>
+
+        <div class="about__contact center">
+          <a href="./resume.pdf" target="_blank">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/hamzaassa"
+            aria-label="github"
+            class="link link--icon"
+          >
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+
+          <a
+            href="https://www.linkedin.com/in/hamza-assa/"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+        </a>
+        </div>
+      </div>
+
+      <!-- Work Experience -->
+      <section class="section">
+        <h2 class="section__title">Work Experience</h2>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <div style="max-width: 700px">
+            <p>
+              For the fast three years i have been working in <a href="https://gedrosia.tech/" style="color: blue;">Gedrosia Technologies</a> on various Flutter and Laravel based applications.
+              </p>
+              <ul style="list-style-type: circle;">
+                <li>
+                  Worked for 3 years on building high-performance applications.
+                </li>
+                <li>
+                  Applied my skills in Flutter and Laravel development, UI/UX, and state management.
+                </li>
+                <li>
+                  Applied my expertise in testing, debugging, and mobile and website deployment.
+                </li>
+              </ul>
+          </div>
+        </div>
+        </section>
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Noter - Note Saver</h3>
+            <p class="project__description">
+              Noter is a powerfull yet simple note-taking app made with Flutter. It has features like sub notes, reminders, and customizable settings, Noter offers a comprehensive Note taking experience that includes images, audios, note-to-note links, and texts.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Flutter</li>
+              <li class="project__stack-item">Dart</li>
+              <li class="project__stack-item">Sqflite</li>
+            </ul>
+
+            <a
+              href="https://play.google.com/store/apps/details?id=com.rasaank.noter&pcampaignid=web_share"
+              aria-label="APK File"
+              class="link link--icon"
+            >
+            <i class="fa-brands fa-google-play"></i>
+          </a>
+           
+          <a
+          href="https://github.com/HamzaAssa/Noter-App-Details/blob/main/README.md"
+          aria-label="github"
+          class="link link--icon"
+        >
+        <i aria-hidden="true" class="fab fa-github"></i>
+      </a>
+
+          </div>
+
+          <div class="project">
+            <h3>Crowdsourced Dictionary</h3>
+            <p class="project__description">
+              It is a Crowdsourced dictionary mobile app which provides meanings, definitions and examples for words in English, Urdu, Balochi, and Roman Balochi, with all the required features like word search, favorites, and offline access.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Flutter</li>
+              <li class="project__stack-item">Laravel</li>
+              <li class="project__stack-item">Mysql</li>
+            </ul>
+
+            <a
+              href="https://drive.google.com/file/d/1zH-sbAzzBNpRQo22D4PgfxspX4wHc3K7/view?usp=sharing"
+              aria-label="APK File"
+              class="link link--icon"
+            >
+            <i class="fa-solid fa-download"></i>
+          </a>
+           
+          <a
+          href="https://github.com/HamzaAssa/rasaank_labzbalad"
+          aria-label="github"
+          class="link link--icon"
+        >
+        <i aria-hidden="true" class="fab fa-github"></i>
+      </a>
+          </div>
+
+          <div class="project">
+            <h3>Gwadar Cricket Academy</h3>
+            <p class="project__description">
+              At <a href="https://gedrosia.tech/" style="color: blue;">Gedrosia Technologies</a>,
+              I was solely responsible for developing the website for Gwadar Cricket Academy, handling everything from design to coding. My work helped create a user-friendly and professional online presence for the academy.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">PHP</li>
+              <li class="project__stack-item">Laravel</li>
+              <li class="project__stack-item">Mysql</li>
+            </ul>
+
+            <a
+              href="https://www.gcagwadar.com/"
+              aria-label="APK File"
+              class="link link--icon"
+            >
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Flutter</li>
+          <li class="skills__list-item btn btn--plain">Laravel</li>
+          <li class="skills__list-item btn btn--plain">Node.JS</li>
+          <li class="skills__list-item btn btn--plain">Dart</li>
+          <li class="skills__list-item btn btn--plain">PHP</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">React</li>
+          <li class="skills__list-item btn btn--plain">Git & Github</li>
+          <li class="skills__list-item btn btn--plain">CI/CD</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact" >
+        <h2 class="section__title">Contact</h2>
+        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+          <a href="mailto:hamzaassarehman@gmail.com" style="margin-right: 10px;">
+            <span class="btn btn--outline">Email me</span> 
+          </a>
+          <p>
+            hamzaassarehman@gmail.com
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
