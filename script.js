@@ -9,9 +9,8 @@ const addThemeClass = (bodyClass, btnClass) => {
   btnTheme2.innerHTML = `<i aria-hidden="true" id="btn-theme" class="fas ${btnClass}"></i>`;
 }
 
-const getBodyTheme = localStorage.getItem('portfolio-theme')
-const getBtnTheme = localStorage.getItem('portfolio-btn-theme')
-
+const getBodyTheme = localStorage.getItem('portfolio-theme') || 'light';
+const getBtnTheme = localStorage.getItem('portfolio-btn-theme') || 'fa-moon'; 
 addThemeClass(getBodyTheme, getBtnTheme)
 
 const isDark = () => body.classList.contains('dark')
